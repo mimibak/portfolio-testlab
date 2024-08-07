@@ -48,13 +48,6 @@ If you already have an SSH key, then let's get started.
 
 </br>
 
-### Clone the original repository
-
-Inside the repository click on the green `<> Code` button.
-Please choose the clone method for SSH and copy the URL (SSH).
-
-</br>
-
 ### Open the CLI
 
 Open your terminal (Git Bash/ VSCode/ Command line).</br>
@@ -71,7 +64,7 @@ cd documents/foldername/...
 
 ```bash
 #git clone <repo> <directory>
-git clone git@github.com:jstephan087/portfolio-lab-2024.git C:\documents\foldername
+git clone git@github.com:mimibak/portfolio-testlab.git C:\documents\foldername
 ```
 
 Execute step 3+4 in one command and add the directory at the end of your clone command. </br>
@@ -89,7 +82,7 @@ Paste the copied SSH URL and run the clone comman
 
 ```bash
 #git clone
-git clone git@github.com:jstephan098/portfolio-lab-2024.git
+git clone git@github.com:mimibak/portfolio-testlab.git
 ```
 
 Change the directory to your new repository
@@ -182,7 +175,7 @@ In the following steps, you will set a new origin URL to change the remote conne
 Keep reference to the original repository. If you want to maintain a connection to the original Portfolio Lab repository:
 
 ```bash
-git remote add og-portfolio-lab git@github.com:jstephan087/portfolio-lab-2024.git
+git remote add og-portfolio-lab git@github.com:mimibak/portfolio-testlab.git
 ```
 
 This allows you to fetch updates from the original repository while working on your own version
