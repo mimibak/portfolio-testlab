@@ -57,7 +57,7 @@ Open your terminal (Git Bash/ VSCode/ Command line).
 </br>
 Change to the directory in which you want to clone the new repository.
 
-```
+```bash
 cd documents/foldername/...
 ```
 
@@ -66,7 +66,7 @@ cd documents/foldername/...
 <summary style="font-weight:bold;">Optional: use one command line</summary>
 </br>
 
-```
+```bash
 # git clone <repo> <directory>
 
 git clone git@github.com:mimibak/portfolio-testlab.git C:\documents\foldername
@@ -77,7 +77,7 @@ git clone git@github.com:mimibak/portfolio-testlab.git C:\documents\foldername
 Note: You can open the CLI and run the clone command in one step by adding the directory at the end of your clone command. Let me know if you need further assistance! </br>
 Change the directory to your new repository
 
-```
+```bash
 cd documents/portfolio
 ```
 
@@ -132,7 +132,7 @@ After creating your new GitHub repository, you'll see a "Quick setup" page. </br
 1. On the Quick setup page, make sure the `SSH` tab is selected.
 2. Copy the `SSH URL`for your new repository. It should look like this: </br>
 
-   ```
+   ```bash
     git@github.com/username/your-repo-name.git
    ```
 
@@ -149,13 +149,13 @@ After creating your new GitHub repository, you'll see a "Quick setup" page. </br
 In the following steps, you will set a new origin URL to change the remote connection.
 
 1. Open a new terminal and navigate to your cloned repository </br>
-   ```
+   ```bash
     cd documents/foldername/your-repo-name
    ```
 2. Set the new remote URL: </br>
    Replace `username` and `your-repo-name`with your actual GitHub username and the name of your new repository. </br>
 
-   ```
+   ```bash
     git remote set-url origin [Paste copied SSH URL]
    ```
 
@@ -167,7 +167,7 @@ In the following steps, you will set a new origin URL to change the remote conne
 
    #### It should display:
 
-   ```
+   ```bash
     origin  git@github.com:username/your-repo-name.git (fetch)
     origin  git@github.com:username/your-repo-name.git (push)
    ```
