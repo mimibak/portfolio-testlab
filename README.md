@@ -213,7 +213,7 @@ Follow these steps to go live with your new portfolio:
 </br>
 
 <a id="newbies"></a>
-**For Netlify Rookies:**
+**For Netlify Newbies:**
 
 1. <a href="https://app.netlify.com/signup" target="_blank">Sign up to Netlify using your GitHub account</a>
 2. Click on `Import an existing Project` > `Import from Git`
