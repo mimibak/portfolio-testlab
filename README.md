@@ -43,7 +43,7 @@ There are many ways to do this, but we'll show you how to set up your project wi
 
 ### Prepare your SSH key
 
-If you don't have an SSH key already, please read how to set up an SSH key with GitHub Docs.
+If you don't have an SSH key already, please read how to set up an SSH key with [GitHub Docs](https://docs.github.com/de/enterprise-cloud%40latest/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 If you already have an SSH key, then let's get started.
 
 </br>
