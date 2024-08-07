@@ -200,32 +200,72 @@ This allows you to fetch updates from the original repository while working on y
 
 Open Netlify and sign up with GitHub or login if you already have a Netlify account. </br>
 Follow these steps to go live with your new portfolio:
+</br>
 
-1. <a href="https://app.netlify.com/signup" target="_blank">Sign up or Login to Netlify using your GitHub account</a>
-2. Configure repository access on GitHub:
+<div align="center">
 
-   - Go to your GitHub profile settings
+[Netlify Newbie](#newbies) </br>
+[Netlify Ninja](#ninja)
 
-   - Navigate to `Applications`
+</div>
 
-   - Click `Configure`next to Netlify
+</br>
+</br>
 
-   - Choose which repositories to allow Netlify access (all or select repositories)
+<a id="newbies"></a>
+**For Netlify Rookies:**
 
-3. In Netlify, click `Import an existing project` and select `Import from Git`
+1. <a href="https://app.netlify.com/signup" target="_blank">Sign up to Netlify using your GitHub account</a>
+2. Click on `Import an existing Project` > `Import from Git`
+
+3. Let's deploy your project with GitHub
+4. Now you need to `Authorize Netlify`
+5. You'll get a message:
+   > Message: No repository found > Configure Netlify on GitHub
+6. Next a popup window shows: `Install Netlify`
+
+   - Choose between `All repositories` or `Only select repositories`
+
+     > When you selected `Only select repositories`, please choose `your-repo-name`
+
+   - click `install`
+
+7. Select the repository you want to deploy
+8. Configure your site settings:
+
+- Set a custom site name (check availability) </br> (we recommend: portfolio-youralias)
+
+- Verify the branch to deploy (usually main)
+
+- You can leave the build settings on default</br>Review build settings (optional for advanced users)
+
+9.  Click `Deploy [your-repo-name]` to start the deployment process
+10. Wait for the deployment to complete. You can monitor the progress in the `Production deploys`section
+11. Once deployed, click the provided link to view your live site
+
+   </br>
+   </br>
+
+<a id="ninja"></a>
+**For Netlify Ninja**</br>
+
+1. Login to Netlify
+2. Click the button `Add new site`
+3. Choose `Import an existing project`[^1]
 4. Choose GitHub as your Git provider
 5. Select the repository you want to deploy
 6. Configure your site settings:
 
-   - Set a custom site name (check availability)
+   - Set a custom site name (check availability) </br> (we recommend: portfolio-youralias)
 
-   - Verify the branch to deploy (usually main)
-
-   - Review build settings (optional for advanced users)
+   - You can leave the build settings on default
+   - (optional for advanced users) Review build settings
 
 7. Click `Deploy [your-repo-name]` to start the deployment process
 8. Wait for the deployment to complete. You can monitor the progress in the `Production deploys`section
-9. Once deployed, click the provided link to view your live site
+9. Once deployed, click the provided link (in the first container) to view your live site
+
+[^1]: If the desired GitHub repository is not listed, go to GitHub and check your Netlify configurations under Settings > Applications.
 
 </br>
 
