@@ -29,125 +29,215 @@ Check out our live demo and start cloning the repo to reach your goal!
 - Connect with GitHub
 - Connect with Netlify and experience easy deployment
 - Disable / enable section components
-- ..
-- ..
-- ..
 - ... more to come with time
-
-</br>
-
-## Roadmap
-
-Off the top of my head, we foresee the following features to be developed for the next releases:
-
-- [ ] Example 1
-- [x] Example 2
-  - [ ] Example 2.1
 
 </br>
 
 ## Get started!
 
-### First steps GitHub Template
+### How to copy the Portfolio Lab Project to your local machine
 
-#### Clone to machine
-
-```bash
-# git clone
-git clone git@github.com:jstephan087/portfolio-lab-2024.git
-```
+There are many ways to do this, but we'll show you how to set up your project with an SSH key.
 
 </br>
 
-## Run Portfolio lab locally
+### Prepare your SSH key
 
-### Auto-run
-
-```bash
-#code incoming
-```
-
-Navigate to localhost to serve (a production-ready) portfolio.
-
-### Step-by-step setup
-
-1. Installation
-
-```bash
-#code incoming
-```
-
-2. Development
-
-```bash
-#code incoming
-```
-
-3. production
-
-```bash
-#code incoming
-```
+If you don't have an SSH key already, please read how to set up an SSH key with GitHub Docs.
+If you already have an SSH key, then let's get started.
 
 </br>
 
-## Installation default theme design
+### Clone the original repository
+
+Inside the repository click on the green `<> Code` button.
+Please choose the clone method for SSH and copy the URL (SSH).
+
+</br>
+
+### Open the CLI
+
+Open your terminal (Git Bash/ VSCode/ Command line).</br>
+Change to the directory in which you want to clone the new repository.
 
 ```bash
-#code incoming
+cd documents/foldername/...
+```
+
+<div style="margin-left:30px;">
+<details>
+<summary style="font-weight:bold;">Optional: use one command line</summary>
+</br>
+
+```bash
+#git clone <repo> <directory>
+git clone git@github.com:jstephan087/portfolio-lab-2024.git C:\documents\foldername
+```
+
+Execute step 3+4 in one command and add the directory at the end of your clone command. </br>
+Change the directory to your new repository
+cd documents/portfolio/portfolio-lab-2024
+
+</details>
+</div>
+
+</br>
+
+### Run the clone command
+
+Paste the copied SSH URL and run the clone comman
+
+```bash
+#git clone
+git clone git@github.com:jstephan098/portfolio-lab-2024.git
+```
+
+Change the directory to your new repository
+
+```bash
+cd documents/foldername/portfolio-lab-2024
 ```
 
 </br>
+<hr>
+</br>
 
-## Change default content
+### Connect GitHub with your new repository
 
-Change the default set content with your data, you have two options to replace it
+1. Open [github.com](https://github.com/)
 
-### 1. VSCode (or your favourite Code-Editor)
+2. Create new repository<br>
+   (click on the green button on the upper left side `New` or on the upper right side `+` > Create new repository)
 
-- Code can be added, edited, deleted via code
+   2.1. Choose a repository name (we recommend: e.g. portfolio-yourname)
 
-### 2. Live Server Environment
+   2.2. (Optional) Add a description to the repository
 
-- Code can be added, edited, deleted via live-server
+   2.3. Set the repository to `public` or `private` </br>
+
+   > (we recommend private: note that you're dealing with sensitive data and your privacy is important for us.)
+
+   2.4. Click the green button `Create Repository`.
+
+</br>
+</br>
+
+### Connect the local repository to the new GitHub repository
+
+After creating your new GitHub repository, you'll see a "Quick setup" page. </br> Follow these steps:</br>
+
+1. On the Quick setup page, make sure the `SSH` tab is selected.
+2. Copy the `SSH URL`for your new repository. It should look like this: </br>
+
+   ```bash
+    git@github.com/username/your-repo-name.git
+   ```
+
+   You'll use it in the next step to update your local repository's remote URL.
+   </br> </br>
+
+   > Note: The URL you copy will have your actual GitHub username and the name of your new repository, not "username" and "your-repo-name".
+
+</br>
+<hr>
+</br>
+
+### Switch to your CLI (VSCode/Terminal/Bash) and configure
+
+In the following steps, you will set a new origin URL to change the remote connection.
+
+1. Open a new terminal and navigate to your cloned repository </br>
+   ```bash
+    cd documents/foldername/your-repo-name
+   ```
+2. Set the new remote URL: </br>
+   Replace `username` and `your-repo-name`with your actual GitHub username and the name of your new repository. </br>
+
+   ```bash
+    git remote set-url origin git@github.com/username/your-repo-name.git
+   ```
+
+3. Verify Changes:
+
+   ```bash
+   git remote -v
+   ```
+
+   #### It should display:
+
+   ```bash
+    origin  git@github.com:username/your-repo-name.git (fetch)
+    origin  git@github.com:username/your-repo-name.git (push)
+   ```
+
+4. Push your local repository to the new GitHub repository:
+   ```bash
+   git push -u origin main
+   ```
+
+### Optional:
+
+<div style="margin-left:20px">
+
+Keep reference to the original repository. If you want to maintain a connection to the original Portfolio Lab repository:
+
+```bash
+git remote add og-portfolio-lab git@github.com:jstephan087/portfolio-lab-2024.git
+```
+
+This allows you to fetch updates from the original repository while working on your own version
+
+</div>
+
+<br>
+<br>
+
+## Let's go live!
+
+### Deployment with Netlify
+
+Open Netlify and sign up with GitHub or login if you already have a Netlify account. </br>
+Follow these steps to go live with your new portfolio:
+
+1. <a href="https://app.netlify.com/signup" target="_blank">Sign up or Login to Netlify using your GitHub account</a>
+2. Configure repository access on GitHub:
+
+   2.1. Go to your GitHub profile settings
+
+   2.2. Navigate to `Applications`
+
+   2.3. Click `Configure`next to Netlify
+
+   2.4. Choose which repositories to allow Netlify access (all or select repositories)
+
+3. In Netlify, click `Import an existing project` and select `Import from Git`
+4. Choose GitHub as your Git provider
+5. Select the repository you want to deploy
+6. Configure your site settings:
+
+   6.1. Set a custom site name (check availability)
+
+   6.2. Verify the branch to deploy (usually main)
+
+   6.3. Review build settings (optional for advanced users)
+
+7. Click `Deploy [your-repo-name]` to start the deployment process
+8. Wait for the deployment to complete. You can monitor the progress in the `Production deploys`section
+9. Once deployed, click the provided link to view your live site
 
 </br>
 
-> If you need more information/help, please read our step-by-step tutorial.
+<details>
+<summary style="font-weight:bold;">Optional: use custom domain</summary>
+If you already have your own domain or want to buy one, you can proceed with step 2.
+Set up a custom domain and don't forget to get the HTTPS cerificate if you connect your custom domain.
+</details>
 
 </br>
 
-## Checklist
-
-- [ ] Change the author name in LICENSE
-- [ ] Change the title in index.html
-- [ ] Change the favicon in public folder
-- [ ] Change the copyright information
-- [ ] Clean up the README.md file and remove unnecssary routes
-- [ ] ...
+> Note: This process integrates your GitHub repository with Netlify, allowing for automated deployments whenever you push changes to your specified branch
 
 </br>
-
-## Deployment with Netlify
-
-### Create an Netlify account
-
-<a href="https://app.netlify.com/signup" target="_blank">Sign up Netlify</a>
-
-### Deploy your own portfolio
-
-Deploy your own version of this portfolio.
-
-#### Import from Git
-
-- Create a new project in your Netlify account linked to your new repo
-- No repositories found? Authorize/Configure it!
-- Choose a site name? (e.g. your name portfolio)
-- Check availability
-- Check your build settings
-- Create an automated deployment pipeline to watch for changes on your repo
-- Build and deploy your new site
-
 </br>
 
 ## History & current state
