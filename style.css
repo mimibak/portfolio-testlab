@@ -1,0 +1,576 @@
+:root {
+  --primary-color: #3899d0;
+  --secondary-color: #282828;
+  --contrast-color: #fdeeb3;
+  --hightlight-color: #de138f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 3em;
+  min-height: 100vh;
+}
+
+.main-header,
+.main-footer {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.content__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: calc(5em + 3vw);
+  margin: 0 calc(3em + 2vw);
+}
+
+h2 {
+  font-size: 2em;
+}
+
+/* Persona */
+
+.persona {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: calc(2em + 2vh);
+}
+
+.persona__img_job {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.persona__img_job img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.persona__job_title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.persona__slogan,
+.persona__selfdescription,
+.experience__job_description > p {
+  text-align: justify;
+  white-space: normal;
+  word-wrap: break-word;
+  hyphens: auto;
+  line-height: 1.25rem;
+}
+
+.persona__name_info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.persona__name {
+  font-size: 1.5rem;
+}
+
+.persona__contact_info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.persona__contact_info_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em 5px;
+  width: 100%;
+}
+
+.persona__contact {
+  display: flex;
+  gap: 1.25rem 10px;
+  justify-content: space-between;
+}
+
+.persona__contact_label {
+  flex: 1 1 30%;
+  font-weight: bold;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.persona__contact_value {
+  flex: 2 1 70%;
+  text-align: left;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  min-width: 0;
+}
+
+.persona__contact_info > h3,
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Social Media */
+
+.persona__social_media_icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.persona__social_media_icons a {
+  text-decoration: none;
+}
+
+.persona__social_media_icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.persona__social_media_icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Download CV */
+
+.persona__download_cv {
+  display: flex;
+  padding: 10px 0;
+}
+
+.persona__download_cv > p {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.persona__download_cv:hover > p {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.persona__download_cv > p::before {
+  content: "";
+  background-image: url("./src/icons/download.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+/* Live Chronic */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+}
+
+.experience > .content__wrapper,
+.education > .content__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  position: relative;
+}
+
+.experience__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.experience__header_title {
+  display: flex;
+  row-gap: 2rem;
+}
+
+.experience__company_time,
+.experience__job_description,
+.skill__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.experience__company_time {
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+/* Timeline*/
+.content__wrapper,
+.experience__timeline {
+  position: relative;
+}
+
+.experience__line {
+  display: none;
+  position: absolute;
+  top: 6px;
+  bottom: 0; /* Linie erstreckt sich über die gesamte Höhe */
+  left: calc((100% / 12 * 2.5) + 10px); /* Berechnet die Position der Linie */
+  width: 4px;
+  background-color: var(--primary-color);
+  z-index: -1;
+}
+
+.education > .content__wrapper > .experience__line {
+  height: 56%;
+}
+
+.experience > .content__wrapper > .experience__line {
+  height: 72%;
+}
+
+.experience__timeline {
+  display: none;
+}
+
+.experience__dot {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+/* Skill Bar */
+
+.skills > .content__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem 20px;
+}
+
+.skill__data_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skill__data {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill__name {
+  flex: 100%;
+  text-align: left;
+}
+
+.skill__bar_container {
+  flex: 100%;
+  display: flex;
+  align-items: left;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 5px;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  margin: auto 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill__level {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--hightlight-color)
+  );
+  border-radius: 15px 0 0 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.teamwork > .skill__bar_container .skill__level {
+  width: 75%;
+}
+
+.leadership > .skill__bar_container .skill__level {
+  width: 55%;
+}
+
+.conflictResu > .skill__bar_container .skill__level {
+  width: 82%;
+}
+
+.resilience > .skill__bar_container .skill__level {
+  width: 91%;
+}
+
+/* Certification */
+.certification > .content_wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px 20px;
+}
+
+.certification__wrapper {
+  display: flex;
+  padding: 0.85em;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.certification__wrapper > a {
+  display: flex;
+  column-gap: 1em;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.certification__wrapper:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 6px 6px 5px 1px rgba(19, 61, 102, 0.27);
+  box-shadow: 6px 6px 5px 1px rgba(19, 61, 102, 0.27);
+}
+
+.certification__download_icon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  padding: 0.5em;
+  transition: transform 0.3s ease;
+}
+
+.certification__download_icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media (min-width: 640px) {
+  .persona {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    gap: 40px 20px;
+  }
+
+  .persona__img_job {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .persona__name_info {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .persona__contact_info {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .persona__contact_info_container {
+    width: 100%;
+  }
+
+  .persona__contact_label {
+    flex: 1 1 20%;
+  }
+
+  .persona__contact_value {
+    flex: 1 1 60%;
+  }
+
+  .skill__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+  }
+
+  .skills > .content__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+  }
+
+  .skill__wrapper.softskills,
+  .skill__wrapper.tools {
+    grid-column: 1 / span 2;
+  }
+
+  .skill__wrapper.hardskills,
+  .skill__wrapper.languages {
+    grid-column: 3 / span 2;
+  }
+
+  .skill__data_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .skill__bar {
+    height: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .content__container {
+    gap: calc(5em + 4vw);
+    margin: 0 calc(5em + 3vw);
+  }
+
+  .experience > .content__wrapper,
+  .education > .content__wrapper {
+    gap: 2em;
+  }
+
+  .experience__wrapper {
+    flex-direction: row;
+  }
+
+  .experience__company_time {
+    flex: 2;
+  }
+
+  .experience__timeline {
+    flex: 1;
+  }
+
+  .experience__job_description {
+    flex: 9;
+  }
+
+  .experience__company_time {
+    font-size: 1rem;
+    text-align: right;
+  }
+
+  .experience__timeline,
+  .experience__line {
+    display: block;
+  }
+
+  .certification > .content_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+    gap: 40px 20px;
+  }
+  .certification__wrapper {
+    padding: 1em;
+    width: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content__container {
+    gap: calc(5em + 4vw);
+    margin: 0 calc(10em + 5vw);
+  }
+
+  .persona {
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    grid-gap: 20px;
+  }
+
+  .persona__contact_info {
+    grid-column: 3;
+  }
+
+  .persona__name_info {
+    width: 90%;
+  }
+
+  .skills > .content__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3rem 20px;
+  }
+
+  .skill__wrapper.softskills,
+  .skill__wrapper.languages {
+    grid-column: 1 / span 2;
+  }
+
+  .skill__wrapper.hardskills {
+    grid-column: 3 / span 2;
+  }
+
+  .skill__wrapper.tools {
+    grid-column: 5 / span 2;
+  }
+
+  .skill__data {
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+
+  .skill__name {
+    flex: 2 1 50%;
+    text-align: center;
+  }
+
+  .skill__bar_container {
+    flex: 2 1 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .skill__bar {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .experience > .content__wrapper > .experience__line {
+    height: 74%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .content__container {
+    margin: 0 calc(8em + 12vw);
+  }
+}
