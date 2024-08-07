@@ -50,10 +50,14 @@ If you already have an SSH key, then let's get started.
 
 ### Open the CLI
 
-Open your terminal (Git Bash/ VSCode/ Command line).</br>
-Change to the directory in which you want to clone the new repository.
+Open your terminal (Git Bash/ VSCode/ Command line).
 
-```bash
+> Note for windows user: The CLI (PowerShell) can cause issues when executing git commands. We recommend using Git Bash.
+>
+> </br>
+> Change to the directory in which you want to clone the new repository.
+
+```
 cd documents/foldername/...
 ```
 
@@ -62,8 +66,9 @@ cd documents/foldername/...
 <summary style="font-weight:bold;">Optional: use one command line</summary>
 </br>
 
-```bash
-#git clone <repo> <directory>
+```
+# git clone <repo> <directory>
+
 git clone git@github.com:mimibak/portfolio-testlab.git C:\documents\foldername
 ```
 
@@ -72,8 +77,8 @@ git clone git@github.com:mimibak/portfolio-testlab.git C:\documents\foldername
 Note: You can open the CLI and run the clone command in one step by adding the directory at the end of your clone command. Let me know if you need further assistance! </br>
 Change the directory to your new repository
 
-```bash
-cd documents/portfolio/portfolio-lab-2024
+```
+cd documents/portfolio
 ```
 
 </details>
@@ -83,7 +88,7 @@ cd documents/portfolio/portfolio-lab-2024
 
 ### Run the clone command
 
-Paste the copied SSH URL and run the clone comman
+Paste the copied SSH URL and run the clone command
 
 ```bash
 #git clone
@@ -92,8 +97,8 @@ git clone git@github.com:mimibak/portfolio-testlab.git
 
 Change the directory to your new repository
 
-```bash
-cd documents/foldername/portfolio-lab-2024
+```
+cd portfolio-testlab
 ```
 
 </br>
@@ -107,15 +112,15 @@ cd documents/foldername/portfolio-lab-2024
 2. Create new repository<br>
    (click on the green button on the upper left side `New` or on the upper right side `+` > Create new repository)
 
-   2.1. Choose a repository name (we recommend: e.g. portfolio-yourname)
+   - Choose a repository name (we recommend: e.g. portfolio-yourname)
 
-   2.2. (Optional) Add a description to the repository
+   - (Optional) Add a description to the repository
 
-   2.3. Set the repository to `public` or `private` </br>
+   - Set the repository to `public` or `private` </br>
 
-   > (we recommend private: note that you're dealing with sensitive data and your privacy is important for us.)
+   > (we recommend private: note that you're dealing with sensitive data and your privacy is important to us.)
 
-   2.4. Click the green button `Create Repository`.
+   - Click the button `Create Repository`.
 
 </br>
 </br>
@@ -127,7 +132,7 @@ After creating your new GitHub repository, you'll see a "Quick setup" page. </br
 1. On the Quick setup page, make sure the `SSH` tab is selected.
 2. Copy the `SSH URL`for your new repository. It should look like this: </br>
 
-   ```bash
+   ```
     git@github.com/username/your-repo-name.git
    ```
 
@@ -137,7 +142,6 @@ After creating your new GitHub repository, you'll see a "Quick setup" page. </br
    > Note: The URL you copy will have your actual GitHub username and the name of your new repository, not "username" and "your-repo-name".
 
 </br>
-<hr>
 </br>
 
 ### Switch to your CLI (VSCode/Terminal/Bash) and configure
@@ -145,14 +149,14 @@ After creating your new GitHub repository, you'll see a "Quick setup" page. </br
 In the following steps, you will set a new origin URL to change the remote connection.
 
 1. Open a new terminal and navigate to your cloned repository </br>
-   ```bash
+   ```
     cd documents/foldername/your-repo-name
    ```
 2. Set the new remote URL: </br>
    Replace `username` and `your-repo-name`with your actual GitHub username and the name of your new repository. </br>
 
-   ```bash
-    git remote set-url origin git@github.com/username/your-repo-name.git
+   ```
+    git remote set-url origin [Paste copied SSH URL]
    ```
 
 3. Verify Changes:
@@ -163,7 +167,7 @@ In the following steps, you will set a new origin URL to change the remote conne
 
    #### It should display:
 
-   ```bash
+   ```
     origin  git@github.com:username/your-repo-name.git (fetch)
     origin  git@github.com:username/your-repo-name.git (push)
    ```
@@ -200,24 +204,24 @@ Follow these steps to go live with your new portfolio:
 1. <a href="https://app.netlify.com/signup" target="_blank">Sign up or Login to Netlify using your GitHub account</a>
 2. Configure repository access on GitHub:
 
-   2.1. Go to your GitHub profile settings
+   - Go to your GitHub profile settings
 
-   2.2. Navigate to `Applications`
+   - Navigate to `Applications`
 
-   2.3. Click `Configure`next to Netlify
+   - Click `Configure`next to Netlify
 
-   2.4. Choose which repositories to allow Netlify access (all or select repositories)
+   - Choose which repositories to allow Netlify access (all or select repositories)
 
 3. In Netlify, click `Import an existing project` and select `Import from Git`
 4. Choose GitHub as your Git provider
 5. Select the repository you want to deploy
 6. Configure your site settings:
 
-   6.1. Set a custom site name (check availability)
+   - Set a custom site name (check availability)
 
-   6.2. Verify the branch to deploy (usually main)
+   - Verify the branch to deploy (usually main)
 
-   6.3. Review build settings (optional for advanced users)
+   - Review build settings (optional for advanced users)
 
 7. Click `Deploy [your-repo-name]` to start the deployment process
 8. Wait for the deployment to complete. You can monitor the progress in the `Production deploys`section
