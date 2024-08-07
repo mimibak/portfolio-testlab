@@ -223,7 +223,7 @@ Follow these steps to go live with your new portfolio:
    - Check the recommanded project name - you might want to change it </br>(note that this name will be part of your website link) </br>
 
     <figure>
-    <img src="./src/img/replace_name.png" />
+    <img src="./docs/assets/screenshots/replace_name.png" />
     <figcaption>we recommend: portfolio-youralias</figcaption>
     </figure>
 
