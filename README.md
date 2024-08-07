@@ -53,9 +53,9 @@ If you already have an SSH key, then let's get started.
 Open your terminal (Git Bash/ VSCode/ Command line).
 
 > Note for windows user: The CLI (PowerShell) can cause issues when executing git commands. We recommend using Git Bash.
->
-> </br>
-> Change to the directory in which you want to clone the new repository.
+
+</br>
+Change to the directory in which you want to clone the new repository.
 
 ```
 cd documents/foldername/...
