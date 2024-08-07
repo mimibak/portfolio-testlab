@@ -67,9 +67,14 @@ cd documents/foldername/...
 git clone git@github.com:mimibak/portfolio-testlab.git C:\documents\foldername
 ```
 
-Execute step 3+4 in one command and add the directory at the end of your clone command. </br>
+</br>
+
+Note: You can open the CLI and run the clone command in one step by adding the directory at the end of your clone command. Let me know if you need further assistance! </br>
 Change the directory to your new repository
+
+```bash
 cd documents/portfolio/portfolio-lab-2024
+```
 
 </details>
 </div>
@@ -97,7 +102,7 @@ cd documents/foldername/portfolio-lab-2024
 
 ### Connect GitHub with your new repository
 
-1. Open [github.com](https://github.com/)
+1. Open <a href="https://github.com/" target="_blank">GitHub</a>
 
 2. Create new repository<br>
    (click on the green button on the upper left side `New` or on the upper right side `+` > Create new repository)
