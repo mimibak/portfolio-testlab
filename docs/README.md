@@ -17,7 +17,7 @@ And the best thing about it? It's free! Really free and not just pseudo free.
 Check out our live demo and start cloning the repo to reach your goal!
 
 <p align="center">
-<a href="https://github.com/jstephan087/portfolio-lab-2024"><br>Live Demo</br></a>
+<a href="https://portfolio-testlab.vercel.app/"><br>Live Demo</br></a>
 </p>
 
 <p align="center"><strong>Clone · Install · Edit · Deploy!</strong></p>
