@@ -4,25 +4,25 @@ import { replaceSocialMedia } from "./socialMedia.js";
 export async function getData() {
   try {
     let dataPersona = await fetchData();
-    console.log(dataPersona);
 
     const newName = dataPersona.persona.name;
     const newTelephone = dataPersona.persona.phone;
     const newEmail = dataPersona.persona.email;
     const newWebsite = dataPersona.persona.website;
 
-    // Elemente auswählen und Inhalte aktualisieren
-    const nameElement = document.getElementById("name");
-    if (nameElement) nameElement.textContent = newName;
+    const nameElement = document.querySelectorAll("[data-persona-name]");
+    if (nameElement.length > 0) {
+      [...nameElement].map((name) => (name.innerText = newName));
+    }
 
-    const phoneElement = document.getElementById("phone");
-    if (phoneElement) phoneElement.textContent = newTelephone;
+    const phoneElement = document.querySelector("[data-persona-phone]");
+    if (phoneElement) phoneElement.innerText = newTelephone;
 
-    const emailElement = document.getElementById("email");
-    if (emailElement) emailElement.textContent = newEmail;
+    const emailElement = document.querySelector("[data-persona-email]");
+    if (emailElement) emailElement.innerText = newEmail;
 
-    const websiteElement = document.getElementById("website");
-    if (websiteElement) websiteElement.textContent = newWebsite;
+    const websiteElement = document.querySelector("[data-persona-website]");
+    if (websiteElement) websiteElement.innerText = newWebsite;
 
     // Social Media Links austauschen
     replaceSocialMedia();
