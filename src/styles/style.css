@@ -175,7 +175,7 @@ h2 {
 
 .persona__download_cv > p::before {
   content: "";
-  background-image: url("./src/icons/download.svg");
+  background-image: url("./src/icons/download.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

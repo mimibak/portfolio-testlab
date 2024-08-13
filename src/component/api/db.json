@@ -1,0 +1,106 @@
+{
+  "persona": {
+    "name": "John Doe Test",
+    "email": "john.doe@email.com",
+    "phone": "(123) 456-7890-800",
+    "website": "www.johndoe.com",
+    "jobtitle": "Webdeveloper",
+    "description": {
+      "slogan": "'Hallo Probleme kann man niemals mit derselben Denkweise lösen, durch die sie entstanden sind.' - Einstein ",
+      "about": "As a passionate and innovative web developer with over 5 years of experience, I thrive on creating impactful and user-friendly websites and applications.\nMy expertise lies primarily in front-end technologies, where I leverage HTML, CSS, and JavaScript to bring designs to life.\nI am deeply committed to modern web standards and continuously strive to stay updated with cutting-edge development techniques.\n\nThroughout my career, I have successfully led projects from concept to deployment,collaborating closely with designers and stakeholders to ensure that the final product meets user needs and business goals.\nI take pride in my ability to mentor junior developers, fostering a culture of technical excellence within my teams.\nMy goal is to not only build functional and aesthetically pleasing web solutions but also to contribute positively to the development community."
+    },
+    "socialMedia": {
+      "linkedIn": "https://www.linkedin.com/in/johndoe",
+      "gitHub": "https://github.com/johndoe",
+      "facebook": "https://www.facebook.com/johndoe",
+      "twitter": "https://twitter.com/johndoe",
+      "instagram": "https://www.instagram.com/johndoe"
+    },
+    "portfolio": "/documents/portfolio_print.pdf"
+  },
+  "jobExperience": [
+    {
+      "companyName": "XYZ Tecnologies",
+      "employmentPeriod": "January 2015 - today",
+      "position": "Lead Front-End Developer",
+      "tasks": [
+        {
+          "description": "Developed and implemented responsive web applications using HTML, CSS, JavaScript, and ReactJS."
+        },
+        {
+          "description": "Collaborated with UX/UI designers to enhance user experience."
+        },
+        {
+          "description": "Led a team of developers to deliver projects on time."
+        }
+      ]
+    },
+    {
+      "companyName": "ABC Company",
+      "employmentPeriod": "July 2011 - December 2014",
+      "position": "Front-End Developer",
+      "tasks": [
+        {
+          "description": "Created and maintained web applications using HTML, CSS, JavaScript, and jQuery."
+        },
+        {
+          "description": "Implemented backend functionalities with PHP and MySQL."
+        },
+        {
+          "description": "Optimized website performance and ensured compatibility across different browsers."
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of California",
+      "datesAttended": "August 2012 - May 2016",
+      "degree": "Bachelor's Degree in Computer Science",
+      "programDetails": {
+        "major": "Computer Science",
+        "grade": "A+"
+      }
+    }
+  ],
+  "skills": {
+    "languages": [
+      { "name": "HTML", "proficiency": 95 },
+      { "name": "CSS", "proficiency": 90 },
+      { "name": "JavaScript", "proficiency": 85 },
+      { "name": "PHP", "proficiency": 70 }
+    ],
+    "frameworks": [
+      { "name": "ReactJS", "proficiency": 85 },
+      { "name": "Node.js", "proficiency": 80 },
+      { "name": "jQuery", "proficiency": 75 },
+      { "name": "Express.js", "proficiency": 70 }
+    ],
+    "tools": [
+      { "name": "Git", "proficiency": 95 },
+      { "name": "Webpack", "proficiency": 80 },
+      { "name": "Docker", "proficiency": 70 },
+      { "name": "JIRA", "proficiency": 65 }
+    ],
+    "softSkills": [
+      { "name": "Team Leadership", "proficiency": 85 },
+      { "name": "Effective Communication", "proficiency": 90 },
+      { "name": "Problem-Solving", "proficiency": 95 },
+      { "name": "Adaptability", "proficiency": 90 }
+    ]
+  },
+  "certificates": [
+    {
+      "title": "Certified Web Developer",
+      "issuer": "Web Development Institute",
+      "dateObtained": "June 2011",
+      "documentPath": "/documents/certified_web_developer.pdf"
+    },
+    {
+      "title": "Certified Software Developer",
+      "issuer": "Software Development Association",
+      "dateObtained": "April 2013",
+      "documentPath": "/documents/certified_software_developer.pdf"
+    }
+  ]
+}
