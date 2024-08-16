@@ -50,4 +50,7 @@ export async function getData() {
   }
 }
 
+// Fetch wird geladen
 getData();
+
+// Todo: a link ersetzen mit db.json für download PDF file ?!

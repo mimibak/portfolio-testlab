@@ -7,6 +7,6 @@ export async function fetchData() {
     let user = await response.json();
     return user;
   } catch (error) {
-    console.error("Fehler beim Abrufen der Daten:", error);
+    console.error("Failed to load fetch:", error);
   }
 }
