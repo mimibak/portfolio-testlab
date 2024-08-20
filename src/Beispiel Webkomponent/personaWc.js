@@ -1,4 +1,4 @@
-class PersonaImgJob extends HTMLElement {
+export class PersonaImgJob extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });

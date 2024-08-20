@@ -1,4 +1,4 @@
-class PersonaNameInfo extends HTMLElement {
+export class PersonaNameInfo extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
