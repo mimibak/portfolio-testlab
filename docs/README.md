@@ -1,6 +1,8 @@
-<p align="center">[Logo]</p>
+<p align="center">![pl_lab_250x100](https://github.com/user-attachments/assets/c0186f63-8d38-4a2e-938b-7769bd413be8)
+</p>
 
 <p align="center">portfolio-lab-2024</p>
+
 
 <p align="center">Get your own digital Portfolio.</p>
 
