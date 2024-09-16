@@ -24,7 +24,7 @@ Check out our live demo and start cloning the repo to reach your goal!
 <a href="https://portfolio-testlab.vercel.app/"><br>Live Demo</br></a>
 </p>
 
-<p align="center"><strong>Clone · Install · Edit · Deploy!</strong></p>
+<p align="center"><strong>Clone · Install · Deploy · Edit!</strong></p>
 
 ## Current Features
 
