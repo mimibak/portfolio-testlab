@@ -1,7 +1,9 @@
-<p align="center">
-</p>
-
-<p align="center">portfolio-lab-2024</p>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/18bf015c-6681-4b73-85c6-d3d1aa1dfdef">
+    <img src="https://github.com/user-attachments/assets/04f6ee1c-dbf9-47b9-9c9d-6c963ee4faeb" alt="PL Lab Logo">
+  </picture>
+</div>
 
 
 <p align="center">Get your own digital Portfolio.</p>
